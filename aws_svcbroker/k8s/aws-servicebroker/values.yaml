@@ -1,0 +1,22 @@
+image: awsservicebroker/aws-servicebroker:beta
+imagePullPolicy: Always
+authenticate: true
+tls:
+  cert:
+  key:
+deployClusterServiceBroker: true
+aws:
+  region: eu-west-2
+  bucket: awsservicebroker
+  key: templates/latest
+  s3region: us-east-1
+  tablename: awssb
+  accesskeyid: "some_key"
+  secretkey: "some_key"
+  targetaccountid: "some_account_id"
+  targetrolename: ""
+  vpcid: "some_vpc_id"
+brokerconfig:
+  verbosity: 10
+  brokerid: awsservicebroker
+  prescribeoverrides: true

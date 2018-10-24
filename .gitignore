@@ -1,0 +1,4 @@
+aws_svcbroker/k8s/charts
+.terraform/
+aws_svcbroker/k8s/manifests/aws-servicebroker
+aws_svcbroker/k8s/manifests/catalog

@@ -1,0 +1,12 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  name: minikube-test
+spec:
+  clusterServiceClassExternalName: rdspostgresql
+  clusterServicePlanExternalName: custom
+  parameters:
+    AccessCidr: "0.0.0.0/0"
+    DBInstanceClass: db.m4.large
+    region: "eu-west-2"
+    MasterUsername: master
